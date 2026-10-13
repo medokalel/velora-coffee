@@ -3,21 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Velora - Premium Coffee Experience</title>
+  <title>Velora | موقع قهوة فاخرة (عرض تجريبي)</title>
+  <meta name="description" content="Velora: موقع تعريفي لعلامة قهوة عضوية وهمية، تصميم عربي RTL متجاوب. مشروع تجريبي بمحتوى تجريبي من تنفيذ محمد خليل.">
+  <meta name="author" content="Mohamed Khalil">
+  <meta name="theme-color" content="#121212">
+  <meta property="og:title" content="Velora | موقع قهوة فاخرة (عرض تجريبي)">
+  <meta property="og:description" content="موقع تعريفي عربي RTL بمحتوى تجريبي.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#about">تخطَّ إلى المحتوى</a>
   <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Velora</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <a class="navbar-brand" href="#home">Velora</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="فتح القائمة">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,7 +36,7 @@
             <li class="nav-item"><a class="nav-link" href="#testimonials">آراء العملاء</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
           </ul>
-          <a href="#" class="btn btn-order">اطلب الآن</a>
+          <a href="#products" class="btn btn-order">اطلب الآن</a>
         </div>
       </div>
     </nav>
@@ -39,7 +47,7 @@
             <div class="hero-image-wrapper">
               <div class="circle-glow"></div>
               <div class="coffee-icon-main">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                   <rect x="40" y="70" width="90" height="80" rx="15" ry="15" fill="none" stroke="#C89B5E" stroke-width="4"/>
                   <path d="M130 85 Q160 85 160 110 Q160 135 130 134" fill="none" stroke="#C89B5E" stroke-width="4"/>
                   <line x1="68" y1="40" x2="68" y2="60" stroke="#C89B5E" stroke-width="4" stroke-linecap="round"/>
@@ -66,16 +74,16 @@
                 الكمال المصنوع يدوياً في كل كوب. اكتشف أجود حبوب البن العضوية المحمصة بإتقان.
               </p>
               <div class="hero-buttons">
-                <a href="#" class="btn btn-primary-custom">استكشف المجموعة</a>
-                <a href="#" class="btn btn-outline-custom">اعرف المزيد</a>
+                <a href="#products" class="btn btn-primary-custom">استكشف المجموعة</a>
+                <a href="#about" class="btn btn-outline-custom">اعرف المزيد</a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="wave-bottom">
-        <svg viewBox="0 0 1440 120" class="w-full h-auto" data-fg-eh6d41="1.37:1.6233:/src/app/components/Hero.tsx:150:9:5868:329:e:svg:e" data-fgid-eh6d41=":r1n:">
-          <path fill="#121212" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" data-fg-eh6d42="1.37:1.6233:/src/app/components/Hero.tsx:151:11:5933:249:e:path"></path>
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path fill="#121212" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
         </svg>
       </div>
     </section>
@@ -92,20 +100,20 @@
               </div>
               <h2 class="about-title">قصتنا</h2>
               <p class="about-text">
-                في فيلورا كوفي، نؤمن بأن القهوة الرائعة تبدأ بحبوب رائعة. بدأت رحلتنا بصميمة بسيطة: جلب أجود أنواع القهوة العضوية في العالم مباشرة إلى كوبك. يتم اختيار كل حبة بعناية من المزارع المستدامة، وتحميصها بدقة، وصنعها بحب.
+                في فيلورا كوفي، نؤمن بأن القهوة الرائعة تبدأ بحبوب رائعة. بدأت رحلتنا بفكرة بسيطة: جلب أجود أنواع القهوة العضوية في العالم مباشرة إلى كوبك. يتم اختيار كل حبة بعناية من المزارع المستدامة، وتحميصها بدقة، وصنعها بحب.
               </p>
               <div class="stats-row">
                 <div class="stat-item">
-                  <h3 class="stat-number">100%</h3>
-                  <p class="stat-label">Organic</p>
+                  <p class="stat-number" data-target="100" data-suffix="%">100%</p>
+                  <p class="stat-label">عضوي</p>
                 </div>
                 <div class="stat-item">
-                  <h3 class="stat-number">+50K</h3>
-                  <p class="stat-label">Happy Customers</p>
+                  <p class="stat-number" data-target="50" data-prefix="+" data-suffix="K">+50K</p>
+                  <p class="stat-label">عميل سعيد</p>
                 </div>
                 <div class="stat-item">
-                  <h3 class="stat-number">+15</h3>
-                  <p class="stat-label">Years Experience</p>
+                  <p class="stat-number" data-target="15" data-prefix="+">+15</p>
+                  <p class="stat-label">سنة خبرة</p>
                 </div>
               </div>
             </div>
@@ -144,13 +152,14 @@
             <span>اكتشف مجموعتنا الفاخرة</span>
           </div>
           <h2 class="section-title">المجموعة المميزة</h2>
+          <p class="demo-note">منتجات وأسعار تجريبية للعرض فقط، ولا يوجد متجر فعلي.</p>
         </div>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
             <div class="product-card">
-              <div class="product-badge">Premium</div>
+              <div class="product-badge">مميز</div>
               <div class="product-image">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                   <rect x="40" y="70" width="90" height="80" rx="15" ry="15" fill="none" stroke="#C89B5E" stroke-width="4"/>
                   <path d="M130 85 Q160 85 160 110 Q160 135 130 135" fill="none" stroke="#C89B5E" stroke-width="4"/>
                   <line x1="68" y1="40" x2="68" y2="60" stroke="#C89B5E" stroke-width="4" stroke-linecap="round"/>
@@ -162,20 +171,20 @@
                 <h3 class="product-name">خليط فيلورا المميز</h3>
                 <p class="product-desc">غني وناعم ومتوازن تماماً مع نكهات الشوكولاتة والكراميل</p>
                 <div class="product-footer">
-                  <a href="#" class="btn btn-add-cart">
+                  <button type="button" class="btn btn-add-cart" data-demo="السلة غير مفعّلة في هذا العرض التجريبي.">
                     <i class="fas fa-cart-plus"></i>
                     أضف إلى السلة
-                  </a>
-                  <span class="product-price">٩٤.٩٩ ريال</span>
+                  </button>
+                  <span class="product-price">٤٨٥ جنيه</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="product-card">
-              <div class="product-badge">Premium</div>
+              <div class="product-badge">مميز</div>
               <div class="product-image">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                   <rect x="40" y="70" width="90" height="80" rx="15" ry="15" fill="none" stroke="#C89B5E" stroke-width="4"/>
                   <path d="M130 85 Q160 85 160 110 Q160 135 130 135" fill="none" stroke="#C89B5E" stroke-width="4"/>
                   <line x1="68" y1="40" x2="68" y2="60" stroke="#C89B5E" stroke-width="4" stroke-linecap="round"/>
@@ -184,23 +193,23 @@
                 </svg>
               </div>
               <div class="product-info">
-                <h3 class="product-name">الإجتياطي الإثيوبي</h3>
+                <h3 class="product-name">الاحتياطي الإثيوبي</h3>
                 <p class="product-desc">مشرق وفاكهي مع نغمات زهرية ولمسة نهائية من الحمضيات</p>
                 <div class="product-footer">
-                  <a href="#" class="btn btn-add-cart">
+                  <button type="button" class="btn btn-add-cart" data-demo="السلة غير مفعّلة في هذا العرض التجريبي.">
                     <i class="fas fa-cart-plus"></i>
                     أضف إلى السلة
-                  </a>
-                  <span class="product-price">١١٢.٤٩ ريال</span>
+                  </button>
+                  <span class="product-price">٥٦٠ جنيه</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="product-card">
-              <div class="product-badge">Premium</div>
+              <div class="product-badge">مميز</div>
               <div class="product-image">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                   <rect x="40" y="70" width="90" height="80" rx="15" ry="15" fill="none" stroke="#C89B5E" stroke-width="4"/>
                   <path d="M130 85 Q160 85 160 110 Q160 135 130 135" fill="none" stroke="#C89B5E" stroke-width="4"/>
                   <line x1="68" y1="40" x2="68" y2="60" stroke="#C89B5E" stroke-width="4" stroke-linecap="round"/>
@@ -209,14 +218,14 @@
                 </svg>
               </div>
               <div class="product-info">
-                <h3 class="product-name">التحميص الكولومبي الداخل</h3>
+                <h3 class="product-name">التحميص الكولومبي الداكن</h3>
                 <p class="product-desc">جريء ومكثف مع نكهات مدخنة ونكهات الكاكاو العميقة</p>
                 <div class="product-footer">
-                  <a href="#" class="btn btn-add-cart">
+                  <button type="button" class="btn btn-add-cart" data-demo="السلة غير مفعّلة في هذا العرض التجريبي.">
                     <i class="fas fa-cart-plus"></i>
                     أضف إلى السلة
-                  </a>
-                  <span class="product-price">١٠١.٢٤ ريال</span>
+                  </button>
+                  <span class="product-price">٥٢٠ جنيه</span>
                 </div>
               </div>
             </div>
@@ -281,6 +290,7 @@
             <span>محبوبة من عشاق القهوة في جميع أنحاء العالم</span>
           </div>
           <h2 class="section-title">ماذا يقول عملاؤنا</h2>
+          <p class="demo-note">آراء وأسماء تجريبية كُتبت لغرض العرض.</p>
         </div>
         <div class="swiper testimonials-swiper">
           <div class="swiper-wrapper">
@@ -295,11 +305,11 @@
                   <i class="fas fa-star"></i>
                 </div>
                 <p class="testimonial-text">
-                  "أفضل قهوة تذوقتها على الإطلاق! الإحتياطي الإثيوبي رائع حقاً. لا يمكنني بدء يومي بدونه."
+                  "أفضل قهوة تذوقتها على الإطلاق! الاحتياطي الإثيوبي رائع حقاً. لا يمكنني بدء يومي بدونه."
                 </p>
                 <div class="testimonial-author">
                   <div class="author-info">
-                    <h4 class="author-name">سارة جونسون</h4>
+                    <p class="author-name">سارة جونسون</p>
                     <p class="author-role">عاشقة القهوة</p>
                   </div>
                   <div class="author-avatar">س</div>
@@ -321,7 +331,7 @@
                 </p>
                 <div class="testimonial-author">
                   <div class="author-info">
-                    <h4 class="author-name">مايكل تشين</h4>
+                    <p class="author-name">مايكل تشين</p>
                     <p class="author-role">صاحب مطعم</p>
                   </div>
                   <div class="author-avatar">م</div>
@@ -343,8 +353,8 @@
                 </p>
                 <div class="testimonial-author">
                   <div class="author-info">
-                    <h4 class="author-name">إيما ويليامز</h4>
-                    <p class="author-role">بارستا متألقة</p>
+                    <p class="author-name">إيما ويليامز</p>
+                    <p class="author-role">باريستا محترفة</p>
                   </div>
                   <div class="author-avatar">إ</div>
                 </div>
@@ -361,14 +371,14 @@
                   <i class="fas fa-star"></i>
                 </div>
                 <p class="testimonial-text">
-                  "الاهتمام بالتفاصيل في التحميص يظهر حقاً. كل خليط له طابعه الفريد. ببساطة استثنائي."
+                  "التغليف رائع والرائحة تملأ البيت من أول فتحة. جربت التحميص الداكن وصار قهوتي اليومية."
                 </p>
                 <div class="testimonial-author">
                   <div class="author-info">
-                    <h4 class="author-name">إيما ويليامز</h4>
-                    <p class="author-role">بارستا متألقة</p>
+                    <p class="author-name">نور حسن</p>
+                    <p class="author-role">مدوّنة قهوة</p>
                   </div>
-                  <div class="author-avatar">إ</div>
+                  <div class="author-avatar">ن</div>
                 </div>
               </div>
             </div>
@@ -384,11 +394,11 @@
           <div class="cta-content text-center">
             <div class="badge-cta">
               <i class="fas fa-mug-hot"></i>
-              <span>عرض لفترة محدودة</span>
+              <span>جرّب العرض</span>
             </div>
-            <h2 class="cta-title">هل أنت مستعد لترقية تجربة القهوة الخاصة بك؟</h2>
-            <p class="cta-text">انضم إلى آلاف العملاء الراضين الذين يبدأون يومهم مع فيلورا</p>
-            <a href="#" class="btn btn-cta">
+            <h2 class="cta-title">هل أنت مستعد لترقية تجربة قهوتك؟</h2>
+            <p class="cta-text">اكتشف تشكيلة فيلورا وابدأ يومك بكوب مختلف</p>
+            <a href="#products" class="btn btn-cta">
               تسوق الآن
               <i class="fas fa-arrow-right"></i>
             </a>
@@ -403,71 +413,63 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 order-lg-4">
             <div class="footer-brand">
-              <h3 class="footer-logo">Velora</h3>
+              <p class="footer-logo">Velora</p>
               <p class="footer-desc">
-                Premium coffee crafted with passion and delivered with care. Experience the finest organic beans from around the world.
+                قهوة فاخرة محمصة بشغف وتصل إليك بعناية. اكتشف أجود حبوب البن العضوية من حول العالم.
               </p>
-              <div class="footer-social">
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 order-lg-3">
             <div class="footer-links">
-              <h4 class="footer-title">Quick Links</h4>
+              <h2 class="footer-title">روابط سريعة</h2>
               <ul class="footer-list">
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">المنتجات</a></li>
-                <li><a href="#">آراء العملاء</a></li>
-                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#testimonials">آراء العملاء</a></li>
               </ul>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 order-lg-2">
             <div class="footer-contact">
-              <h4 class="footer-title">اتصل بنا</h4>
+              <h2 class="footer-title">اتصل بنا</h2>
               <ul class="contact-list">
                 <li>
-                  <i class="far fa-envelope"></i>
-                  <span>hello@veloracoffee.com</span>
+                  <i class="far fa-envelope" aria-hidden="true"></i>
+                  <span>hello@example.com</span>
                 </li>
                 <li>
-                  <i class="fas fa-phone"></i>
-                  <span>+١ (٥٥٥) ١٢٣-٤٥٦٧</span>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span>١٢٣ شارع القهوة، مدينة التحميص، ١٢٣٤٥ RC</span>
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  <span>القاهرة، مصر</span>
                 </li>
               </ul>
+              <p class="demo-note demo-note--start">بيانات التواصل تجريبية.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 order-lg-1">
             <div class="footer-newsletter">
-              <h4 class="footer-title">اشترك في نشرتنا الإخبارية</h4>
-              <p class="newsletter-text">Get updates on new blends and exclusive offers.</p>
-              <form class="newsletter-form">
-                <button type="submit" class="btn btn-send"><i class="fas fa-paper-plane"></i></button>
-                <input type="email" class="form-control" placeholder="أدخل بريدك الإلكتروني" required>
+              <h2 class="footer-title">اشترك في نشرتنا الإخبارية</h2>
+              <p class="newsletter-text">تابع جديد الخلطات والعروض.</p>
+              <form class="newsletter-form" id="newsletter-form">
+                <button type="submit" class="btn btn-send" aria-label="اشتراك"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                <input type="email" class="form-control" placeholder="أدخل بريدك الإلكتروني" aria-label="البريد الإلكتروني" autocomplete="email" required>
               </form>
+              <p class="demo-note demo-note--start">النموذج تجريبي ولا يحفظ أي بيانات.</p>
             </div>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <div class="footer-bottom-left">
-          <a href="#">Terms of Service</a>
-          <a href="#">Privacy Policy</a>
+          <span>موقع تجريبي بمحتوى تجريبي: Velora علامة وهمية.</span>
         </div>
         <div class="footer-bottom-right">
-          <span>© ٢٠٢٦ فيلورا كوفي. جميع الحقوق محفوظة.</span>
+          <span>تصميم وتطوير <a href="https://github.com/medokalel" rel="noopener">محمد خليل</a> © ٢٠٢٦</span>
         </div>
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <div class="demo-toast" id="demo-toast" role="status" aria-live="polite" hidden></div>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>

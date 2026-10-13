@@ -1,24 +1,41 @@
-# ☕ Velora Coffee
+# Velora Coffee
 
-موقع تعريفي لشركة Velora Coffee - قهوة فاخرة عضوية
+موقع تعريفي عربي (RTL) لعلامة قهوة فاخرة، أنشأته كتمرين على بناء صفحة هبوط كاملة بـ HTML وCSS وJavaScript وBootstrap.
 
-## 🚀 التقنيات المستخدمة
+> **Velora علامة وهمية.** المنتجات والأسعار والآراء والأرقام وبيانات التواصل كلها محتوى تجريبي للعرض فقط، ومكتوب ذلك داخل الصفحة. لا يوجد متجر أو سلة أو نشرة بريدية فعلية.
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- JavaScript
-- Swiper.js
-- Font Awesome
+**العرض المباشر:** https://medokalel.github.io/velora-coffee/
 
-## ✨ المميزات
+## ما الذي يعمل فعلاً
 
-- تصميم RTL عربي
-- Responsive على كل الأجهزة
-- Animations لما بتسكرول
-- Swiper slider لآراء العملاء
-- Scroll spy للـ navbar
+- تصميم RTL عربي متجاوب (Bootstrap 5 + CSS مخصص).
+- Navbar ثابت يتغير شكله عند التمرير، وقائمة موبايل تُغلق بعد اختيار قسم.
+- Scroll spy بـ IntersectionObserver يحدد القسم الحالي في القائمة.
+- ظهور الأقسام تدريجياً عند التمرير، وعدّاد الأرقام، ويتوقفان تلقائياً مع `prefers-reduced-motion`.
+- سلايدر آراء بـ Swiper (محلي بدون CDN) بتشغيل تلقائي يتوقف عند المرور بالماوس.
+- Skip link، وتركيز واضح بلوحة المفاتيح، وأسماء لكل الأزرار والحقول.
+- أزرار «أضف إلى السلة» ونموذج النشرة تعرض رسالة أنها تجريبية ولا ترسل شيئاً.
 
-## 📱 اللينك
+## تشغيل المشروع محلياً
 
-[Live Demo](https://medokalel.github.io/velora-coffee/)
+لا يحتاج بناء. افتح `index.html` أو شغّل أي سيرفر ثابت:
+
+```bash
+python -m http.server 8000
+```
+
+## التقنيات
+
+HTML5 · CSS3 · Bootstrap 5 · JavaScript · Swiper 12 · Font Awesome · خط Cairo (Google Fonts)
+
+## الهيكل
+
+```
+index.html
+css/   style.css + مكتبات (bootstrap, font awesome, swiper)
+js/    script.js + مكتبات
+webfonts/
+favicon.svg
+```
+
+تصميم وتطوير [محمد خليل](https://github.com/medokalel).
